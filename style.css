@@ -1,0 +1,119 @@
+ html body{
+    scroll-behavior: smooth;
+    background-color: #1f2235; 
+    font-family: "Baloo Tamma 2", cursive;
+  } 
+#landing{
+    background-image: url("Images/B_I.jfif");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.h1_land{
+    font-size: 5rem;
+    font-family: cursive;
+}
+  /* Main Heading Font */
+  .m-heading {
+    font-family: "Roboto Slab", serif;
+  }
+  
+  /* Main Container height*/
+  .main-container {
+    height: 100vh;
+  }
+  
+  /* Aligning items in main row */
+  .main_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Changing Name Font sixe */
+  .main_row h1 {
+    font-size: 5rem;
+  }
+  
+  /* Making the main image the size of the screen */
+  .main_row img {
+    width: auto;
+    height: 100vh;
+  }
+  
+  /* About Section */
+  .about {
+    background: #313552;
+    border-radius: 0.5rem;
+  }
+  
+  .card {
+    border-bottom: 8px solid #f5ba09;
+       
+}
+.row_l{
+    margin-left: 8rem;
+}
+.testimonial{
+    background-image: url("Images/BG.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 70vh;
+}
+#test_img{
+    float: left;
+    max-width: 20%;
+    max-height: 25%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+#w_span {
+    font-size: 40px;
+    margin-right: 15px;
+  }
+footer{
+    margin-right: 0%;
+    margin-left: 0%;
+    background-color: beige;
+    width: 100%;
+    
+}
+#f_img{
+    max-width: 70%;
+    padding-left: 35%;
+}
+.form{
+    background-color: azure;
+}
+  
+  /* Social Media Section */
+  #social-media {
+    background: #313552;
+  }
+  label{
+      padding-right: 4rem;
+  }
+  
+  /* Add color to Social Media Links */
+  .media_link {
+    padding: 1rem;
+    max-width: 15rem;
+    margin-left: 1rem;
+    border: 2px solid #f5ba09;
+    border-radius: 0.5rem;
+  }
+  @media screen and (max-width: 600px) {
+    .col {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
