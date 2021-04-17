@@ -1,4 +1,8 @@
+ html{
+   overflow-x: hidden;
+ }
  html body{
+     
     scroll-behavior: smooth;
     background-color: #1f2235; 
     font-family: "Montserrat";
@@ -6,6 +10,7 @@
 #landing{
     background-image: url("Images/B_I.jfif");
     width: 100%;
+    background-attachment: fixed  ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
@@ -25,59 +30,54 @@
   .main-container {
     height: 100vh;
   }
-  
-  .main_row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .main_row h1 {
-    font-size: 5rem;
-  }
-  
-  .main_row img {
-    width: auto;
-    height: 100vh;
-  }
-  .card {
+  .p_card {
     border-bottom: 8px solid #f5ba09;
+    margin-left: 8rem;
        
 }
-.row_l{
-    margin-left: 8rem;
+.t_card {
+  border-radius: 1rem;
+  box-shadow: 0px -10px 0px rgb(151, 248, 6)
 }
-.testimonial{
-    background-repeat: no-repeat; 
-    background-position: center;
-    background-size: cover; 
-    height: 50rem;
-    
+
+.t_img {
+  width: 6.2rem;
+  border-radius: 5rem;
+  margin: 1.3rem auto 1rem auto
 }
-#test_h{
+
+.col-md-4 {
+  padding: 0 0.5rem
+}
+
+.t_card-title {
+  font-size: 1rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: 'IM Fell French Canon SC'
+}
+
+.t_card-text {
   text-align: center;
-  font-size: 4rem;
-  font-family: initial;
-  color:beige;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  color: rgb(82, 81, 81);
+  line-height: 1.4rem
 }
-#test_h2{
-  color: #f5ba09;
+
+.t_footer {
+  border-top: none;
+  text-align: center;
+  line-height: 1.2rem;
+  padding: 2rem 0 1.4rem 0;
+  font-family: 'Varela Round'
 }
-#test_img{
-    float: left;
-    max-width: 20%;
-    max-height: 25%;
-    margin-right: 20px;
-    border-radius: 50%;
+
+#name {
+  font-size: 0.8rem;
+  font-weight: bold
 }
-#w_span {
-    color: beige; 
-    font-size: 40px;
-    margin-right: 15px;
-  }
-#test_p{
-  color: beige;
-}
+
   .form{
     background-color: azure;
 }
@@ -109,23 +109,36 @@ footer{
    
 
   @media screen and (max-width: 768px) {
+    html body{
+      width: 100%;
+      overflow-x: hidden;
+  }
+    #landing{
+      background-size: cover;
+    }
+    .h1_land{
+      font-size:  3rem;;
+    }
     .col {
       width: 100%;
       display: block;
-      margin-bottom: 20px;
+      margin: auto;
     }
-    .testimonial
-    { image-resolution: auto;
-      font-size: 1vw;
-      width: 100%;
-      height: auto;
-      display: block;
+    .card{
+      margin: auto;
     }
+    .t_card {
+      margin: 1rem 0.7rem 1rem;
+      max-width: 80vw
+  }
     .isRight{
       border-left: none;
     }
     .topBorder
     {
       border-top: 3px solid #51a4e7;
+    }
+    footer{
+      margin: auto;
     }
 }
