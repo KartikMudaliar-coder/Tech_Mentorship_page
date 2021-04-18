@@ -32,8 +32,8 @@
   }
   .p_card {
     border-bottom: 8px solid #f5ba09;
-    margin-left: 8rem;
-       
+    /* margin-left: 8rem; */
+    margin: auto;
 }
 .t_card {
   border-radius: 1rem;
@@ -84,6 +84,9 @@
   label{
       padding-right: 4rem;
   }
+  #f_input{
+    width: 40rem;
+  }
 footer{
     border-top: 3px solid azure;
     width: 100%;
@@ -131,6 +134,9 @@ footer{
       margin: 1rem 0.7rem 1rem;
       max-width: 80vw
   }
+  #f_input{
+    width: 20rem;
+  }
     .isRight{
       border-left: none;
     }
@@ -140,5 +146,8 @@ footer{
     }
     footer{
       margin: auto;
+    }
+    #f_fon:hover{
+      color: bisque;
     }
 }
